@@ -38,6 +38,34 @@
 </section>
 
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns">
+      <div class="column">
+        <h2 class="title">Camera Perturbations Experiment</h2>
+        <div class="content has-text-justified">
+          <p>
+            We conducted an additional simple pick-and-place experiment in which the policy was trained with a fixed camera pose but tested under camera perturbations. 
+            The results show that the RGB policy failed to complete the task, whereas the world-frame DP3 policy successfully handled the out-of-distribution camera changes, due to its viewpoint-invariant representation. 
+
+            However, our main experiments show that the RGB policy achieves a high success rate, even under test-time camera motion that may introduce minor compounding errors.
+            This robustness arises because teleoperators actively change camera viewpoints during data collection. Thus, the policy learns from data where the camera pose is not fixed and is encouraged to be robust to such changes.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column has-text-centered">
+        <!-- Replace the image with a full-width video -->
+        <video width="100%" height="auto" controls>
+          <source src="./add_exp.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <section class="section">
   <div class="container is-max-desktop">
